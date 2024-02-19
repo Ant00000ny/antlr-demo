@@ -32,7 +32,7 @@ tasks {
         dependsOn(generateGrammarSource)
     }
     compileTestKotlin {
-        dependsOn(generateGrammarSource)
+        dependsOn(generateTestGrammarSource)
     }
     generateGrammarSource {
         arguments = arguments + listOf("-visitor")
