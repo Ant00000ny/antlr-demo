@@ -10,6 +10,7 @@ TEXT   : LETTER+ ;
 CRLF : '\r'? '\n' | '\r';
 
 log : entry+;
+
 entry : timestamp ' ' level ' ' message CRLF;
 
 timestamp : DATE ' ' TIME;

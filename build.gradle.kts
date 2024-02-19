@@ -35,6 +35,7 @@ tasks {
         dependsOn(generateTestGrammarSource)
     }
     generateGrammarSource {
+        source = project.fileTree("src/main/antlr")
         arguments = arguments + listOf("-visitor")
     }
     jar {
